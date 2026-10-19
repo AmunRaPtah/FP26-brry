@@ -77,7 +77,9 @@ rdwd::updateRdwd(vignette=FALSE)
 
 ## Get weather data
 
-download recent weather data using [rdwd](https://brry.github.io/rdwd/)
+download recent weather data using [rdwd](https://brry.github.io/rdwd/)[^dwd]
+
+[^dwd]: The German Weather Service (DWD) provides free access to weather data. 
 
 ```{r, get_weather_data}
 library(rdwd)
