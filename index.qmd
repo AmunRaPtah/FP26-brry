@@ -2,6 +2,7 @@
 title: "Fundamentals of Programming 2026"
 author: "Berry Boessenkool; "
 date: last-modified
+date-format: iso
 format: html
 ---
 
