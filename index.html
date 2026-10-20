@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.10.19">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -14,10 +14,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -70,18 +73,31 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
 <script src="index_files/libs/quarto-html/anchor.min.js"></script>
 <link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="index_files/libs/bootstrap/bootstrap-138a6193a3bd40baf1e627da441a4734.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="index_files/libs/bootstrap/bootstrap-917079515d91bccb85b543faf8aa8bb6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
 
-<body class="fullcontent quarto-light">
+<body class="quarto-light">
 
 <div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
-
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#homework" id="toc-homework" class="nav-link active" data-scroll-target="#homework">Homework</a></li>
+  <li><a href="#check-package-availability" id="toc-check-package-availability" class="nav-link" data-scroll-target="#check-package-availability">Check package availability</a></li>
+  <li><a href="#get-weather-data" id="toc-get-weather-data" class="nav-link" data-scroll-target="#get-weather-data">Get weather data</a></li>
+  <li><a href="#visualise-recent-temperature" id="toc-visualise-recent-temperature" class="nav-link" data-scroll-target="#visualise-recent-temperature">Visualise recent temperature</a></li>
+  <li><a href="#transfer-to-python" id="toc-transfer-to-python" class="nav-link" data-scroll-target="#transfer-to-python">Transfer to Python</a></li>
+  <li><a href="#summary-statistics" id="toc-summary-statistics" class="nav-link" data-scroll-target="#summary-statistics">Summary statistics</a></li>
+  </ul>
+</nav>
+</div>
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
@@ -142,7 +158,7 @@ To learn more markdown, create a copy of the file (version at course start if wa
 <li><label><input type="checkbox">format a plot as actual figures and add labels (chunk options)</label></li>
 <li><label><input type="checkbox">elsewehere in the text, add a reference to that figure</label></li>
 <li><label><input type="checkbox">change the date to the rendering time (note why in the commit - there is one particular reason)</label></li>
-<li><label><input type="checkbox">add a table of contents (yaml header option)</label></li>
+<li><label><input type="checkbox" checked="">add a table of contents (yaml header option)</label></li>
 <li><label><input type="checkbox">set a custom theme or highlight style in the yaml header</label></li>
 <li><label><input type="checkbox">use the modern chunk option format (at chunk top, not inside {}) for labels + options</label></li>
 <li><label><input type="checkbox" checked="">add a footnote somewhere in the text</label></li>
