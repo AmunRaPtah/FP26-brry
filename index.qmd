@@ -21,7 +21,7 @@ with source code at the [repo](https://github.com/brry/FP26).
 Implement **one** of the ideas below, following the instructions above.  
 To learn more markdown, create a copy of the file (version at course start if wanted) in which you can implement many/all ideas. Each student should have some options available, so don't push those changes. 
 
-- [x] change the date format in the yaml header to include HH:mm after the day (*this one should be implemented early, please*)
+- [ ] change the date format in the yaml header to include HH:mm after the day (*this one should be implemented early, please*)
 - [x] change this bullet list to checkboxes for ideas that are implemented
 - [ ] link "version at course start" to the suitable github file history URL
 - [ ] add some reasonable markdown code (e.g. strikethrough, link, reference, bold, cursive, ...)
