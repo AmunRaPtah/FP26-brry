@@ -30,7 +30,7 @@ To learn more markdown, create a copy of the file (version at course start if wa
 - [ ] in Rstudio: change the chunk output location setting to "console" (changes yaml header)
 - [ ] make one single code chunk foldable (folded by default); leave all other chunks as is
 - [ ] suppress the output of `updateRdwd` with a chunk option
-- [ ] add a bit of text with the output of an inline code expression
+- [X] add a bit of text with the output of an inline code expression
 - [ ] improve the python output to not be split up (with a chunk option)
 - [ ] add a `knitr::kable` with a small subset of the dataset (with proper package importing)
 - [ ] format a plot as actual figures and add labels (chunk options)
@@ -89,6 +89,8 @@ library(rdwd)
 link <- selectDWD("Potsdam", res="daily", var="kl", per="recent")
 clim <- dataDWD(link, varnames=TRUE, force=24, quiet=TRUE)
 ```
+
+The dataset covers `r nrow(clim)` days with a mean daily temperature of `r round(mean(clim$TMK.Lufttemperatur, na.rm=TRUE))` °C.
 
 ## Visualise recent temperature
 
