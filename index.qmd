@@ -26,7 +26,7 @@ To learn more markdown, create a copy of the file (version at course start if wa
 - [X] change the date format in the yaml header to include HH:mm after the day (*this one should be implemented early, please*)
 - [x] change this bullet list to checkboxes for ideas that are implemented
 - [ ] link "version at course start" to the suitable github file history URL
-- [ ] add some reasonable markdown code (e.g. strikethrough, link, reference, bold, cursive, ...)
+- [x] add some reasonable markdown code (e.g. strikethrough, link, reference, bold, cursive, ...)
 - [ ] in Rstudio: change the chunk output location setting to "console" (changes yaml header)
 - [ ] make one single code chunk foldable (folded by default); leave all other chunks as is
 - [ ] suppress the output of `updateRdwd` with a chunk option
@@ -91,6 +91,8 @@ clim <- dataDWD(link, varnames=TRUE, force=24, quiet=TRUE)
 ```
 
 The dataset covers `r nrow(clim)` days with a mean daily temperature of `r round(mean(clim$TMK.Lufttemperatur, na.rm=TRUE))` °C.
+
+Potsdam weather is ~~boring~~ **surprisingly interesting** once you *plot* it, thanks to open data from the [DWD](https://www.dwd.de).
 
 ## Visualise recent temperature
 
